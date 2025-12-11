@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Poppins } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/lib/CartContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-// Police serif pour les titres
-const cormorant = Cormorant_Garamond({
-  weight: ["400", "600", "700"],
-  subsets: ["latin"],
-  variable: "--font-cormorant",
-});
-
-// Police sans-serif pour le texte
-const poppins = Poppins({
-  weight: ["300", "400", "500", "600"],
-  subsets: ["latin"],
-  variable: "--font-poppins",
-});
 
 export const metadata: Metadata = {
   title: "La Fabrique des Nines - Objets de décoration faits main",
@@ -32,9 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body
-        className={`${cormorant.variable} ${poppins.variable} antialiased`}
-      >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased">
         <CartProvider>
           <Header />
           <main>{children}</main>

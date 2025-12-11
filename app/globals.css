@@ -31,19 +31,19 @@
   --color-text-secondary: var(--text-secondary);
   
   /* Polices */
-  --font-serif: var(--font-cormorant);
-  --font-sans: var(--font-poppins);
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Poppins', system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--text-primary);
-  font-family: var(--font-poppins), system-ui, sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
 
 /* Styles globaux pour les titres */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-cormorant), serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 /* Styles pour les boutons */
