@@ -1,0 +1,7 @@
+<svg width="1920" height="1920" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1920" fill="#F6F0EA"/>
+  <rect x="192" y="576" width="1536" height="768" rx="20" fill="#C47A5A" opacity="0.3"/>
+  <circle cx="960" cy="960" r="288" fill="#D6A548" opacity="0.5"/>
+  <text x="960" y="998.4000000000001" font-family="Arial, sans-serif" font-size="96" fill="#2B2B2B" text-anchor="middle" font-weight="bold">Plateau Hero</text>
+  <text x="960" y="1113.6" font-family="Arial, sans-serif" font-size="48" fill="#777777" text-anchor="middle">Placeholder</text>
+</svg>

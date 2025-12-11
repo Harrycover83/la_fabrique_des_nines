@@ -1,0 +1,38 @@
+/* Police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  /* Palette de couleurs La Fabrique des Nines */
+  --background: #F6F0EA;
+  --foreground: #2B2B2B;
+  --primary: #C47A5A;
+  --secondary: #D6A548;
+  --accent: #2557FF;
+  --text-secondary: #777777;
+}
+
+@theme inline {
+  /* Couleurs personnalisées */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-text-secondary: var(--text-secondary);
+  
+  /* Typographies */
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}

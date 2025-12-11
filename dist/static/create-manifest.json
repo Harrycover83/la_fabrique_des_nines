@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "createdAt": "2025-12-11T21:10:38.664Z",
+  "workspaces": [
+    {
+      "name": "default",
+      "title": "La Fabrique des Nines",
+      "basePath": "/",
+      "projectId": "z8ea33xy",
+      "dataset": "production",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><rect width=\"32\" height=\"32\" rx=\"2\" fill=\"#4c1a9e\"></rect><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" alignment-baseline=\"middle\" fill=\"hsla(263, 72%, 76%, 1)\" style=\"font-family:Inter, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Liberation Sans&quot;, Helvetica, Arial, system-ui, sans-serif;font-weight:500;font-size:13px;transform:translateY(1px)\">LF</text></svg>",
+      "mediaLibrary": {
+        "enabled": false
+      },
+      "schema": "ce42dead.create-schema.json",
+      "tools": "11186d77.create-tools.json"
+    }
+  ],
+  "studioVersion": "4.21.1"
+}

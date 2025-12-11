@@ -1,0 +1,7 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="600" fill="#F6F0EA"/>
+  <rect x="60" y="180" width="480" height="240" rx="20" fill="#C47A5A" opacity="0.3"/>
+  <circle cx="300" cy="300" r="90" fill="#D6A548" opacity="0.5"/>
+  <text x="300" y="312" font-family="Arial, sans-serif" font-size="30" fill="#2B2B2B" text-anchor="middle" font-weight="bold">IG 2</text>
+  <text x="300" y="348" font-family="Arial, sans-serif" font-size="15" fill="#777777" text-anchor="middle">Placeholder</text>
+</svg>
