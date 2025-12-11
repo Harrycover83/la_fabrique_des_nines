@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Placeholders</title>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <script>
+        // This script generates placeholder images
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        function createPlaceholder(text, bgColor) {
+            ctx.fillStyle = bgColor;
+            ctx.fillRect(0, 0, 600, 600);
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = 'bold 40px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(text, 300, 300);
+            return canvas.toDataURL();
+        }
+        
+        console.log('Placeholders would be generated here');
+    </script>
+</body>
+</html>

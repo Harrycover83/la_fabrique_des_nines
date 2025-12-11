@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* 
+ * La Fabrique des Nines - Custom Theme
+ * 
+ * Palette de couleurs:
+ * - background: #F6F0EA (fond beige chaleureux)
+ * - primary: #C47A5A (terracotta argile pour boutons)
+ * - secondary: #D6A548 (ocre/moutarde pour badges)
+ * - accent: #2557FF (bleu intense pour détails)
+ * - text-primary: #2B2B2B (texte principal)
+ * - text-secondary: #777777 (texte secondaire)
+ */
+
+:root {
+  --background: #F6F0EA;
+  --primary: #C47A5A;
+  --secondary: #D6A548;
+  --accent: #2557FF;
+  --text-primary: #2B2B2B;
+  --text-secondary: #777777;
+}
+
+@theme inline {
+  /* Couleurs personnalisées */
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  
+  /* Polices */
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* Styles globaux pour les titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Styles pour les boutons */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #B36A4A;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background-color: #C69438;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les cartes */
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Animation de chargement */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
