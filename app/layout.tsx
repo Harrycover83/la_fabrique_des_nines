@@ -16,12 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" 
-          rel="stylesheet" 
-        />
-      </head>
       <body className="antialiased">
         <CartProvider>
           <Header />

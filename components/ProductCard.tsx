@@ -29,7 +29,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             {product.name}
           </h3>
         </Link>
-        <p className="text-artisan-charcoal text-sm mb-4 line-clamp-2">
+        <p className="text-artisan-charcoal text-sm mb-4">
           {product.description}
         </p>
         <div className="flex items-center justify-between">

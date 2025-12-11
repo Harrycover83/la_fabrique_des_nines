@@ -14,7 +14,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Here you would typically send the form data to an API
-    console.log('Form submitted:', formData);
+    // For now, just show success message
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);

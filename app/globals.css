@@ -10,7 +10,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Inter, system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
 }
 
 @layer utilities {
@@ -27,5 +27,5 @@ body {
 }
 
 .handwritten {
-  font-family: 'Dancing Script', cursive;
+  font-family: cursive;
 }
